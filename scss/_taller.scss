@@ -1,10 +1,14 @@
 .main-taller {
     display: flex;
     background-color:#F2ECD8;
-    img{
-    width: 60%;
-    padding: 10px 0;
-    }
+    
+        img{
+            width: 100%;
+            max-width: 200px;
+            height: 100%;
+            max-height: 220px;  
+            }
+    
    p {
     margin: 40px 80px;
     text-align: center;   
@@ -42,7 +46,6 @@
         text-align: center;
         padding: 30px 20px;
         border-radius: 15px;
-        border: 0.5px solid black;
         margin: 10px 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         @include breakpoint(sm){
@@ -56,28 +59,29 @@
             padding: 10px 5px;
           }
         
-    }
+    
         i{
             display: inline-block;
             transform: rotate(0);
             transition: ease-out 1s;
-            color:#D9AF8B;
+            color:#8a3ac0;
             font-size: 2rem;
-             i:hover{
+             &:hover{
             transform: rotate(360deg);
             transition: ease-out 1s;
                 }
             }
+        }
         
     p{
         text-decoration: none;
         }
     .btn-light{
-        background-color:rgb(124, 89, 80);
+        background-color:#8a3ac0;
         border:none;
         a{
             text-decoration: none;
-            a:hover{
+            &:hover{
             color: darkred;
         }
         }
