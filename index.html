@@ -7,7 +7,17 @@
   <meta name="description" content="taller de arte">
   <meta name="keywords"
     content="ARTE,PINTURA,PINTURAS,CUADROS,JABONES,VELAS,PINCELES,ATELIER,CLASES,TÉCNICAS,TECNICAS,HANEL,VENTA,CHOCOLATES,REPOSTERIA">
-  <title>Arte Hanel</title>
+  
+    <!--Open graph-->
+    <meta property="og:title" content="Arte Hanel">
+    <meta property="og:image" content="https://artehanel.000webhostapp.com/imagenes/logo_arte.png">
+    <meta property="og:image:width" content="200px">
+    <meta property="og:image:height" content="200px">
+    <meta propetyy="og:url" content="https://artehanel.000webhostapp.com">
+    <meta property=" og:description" content="Taller de Arte Hanel"> 
+    <meta property="og:autor" content="Agustina Claro Hanel">
+    <meta property="og:locale" content="en_ES">
+    <title>Arte Hanel</title>
   <link rel="icon" href="./imagenes/agus claro logo.png" type="image/icon type">
   <link rel="stylesheet" href="./css/icons.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,7 +65,7 @@
       <h1 id="my_title"> Arte Hanel</h1>
     </div>
     <div class="main-site">
-      <img class="img-fluid" src="./imagenes/pinceles1.jpg">
+      <img class="img-fluid" src="./imagenes/pinceles1.jpg" alt="pinceles dentro de frasco de vidrio" loading="lazy">
     </div>
     <section class="container">
       <div class="row">
@@ -94,24 +104,7 @@
 
     <section>
       <button onclick="topFunction()" id="myBtn" title="HACIA ARRIBA"><i class="fas fa-angle-up"></i></button>
-      <script>
 
-        var mybutton = document.getElementById("myBtn");
-
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
     </section>
   </main>
 
@@ -146,7 +139,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
   <script src="https://kit.fontawesome.com/cd6dae99a5.js" crossorigin="anonymous"></script>
-
+<script src="js/btn.js"></script>
 
 </body>
 

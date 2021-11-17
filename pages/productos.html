@@ -96,7 +96,7 @@
             </div>
         </div>
         <section class="container">
-            <h1 class="titulos">Categorias</h1>
+            <p class="titulos">Categorias</p>
         </section>
         <section class="section-bg">
             <div class="container">
@@ -129,27 +129,8 @@
         </div>
         </section>
         <section>
-            <button onclick="topFunction()" id="myBtn" title="HACIA ARRIBA"><i class="fas fa-angle-up"></i></button>
-            <script>
-
-                var mybutton = document.getElementById("myBtn");
-
-                window.onscroll = function () { scrollFunction() };
-
-                function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        mybutton.style.display = "block";
-                    } else {
-                        mybutton.style.display = "none";
-                    }
-                }
-
-
-                function topFunction() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            </script>
+            <button onclick="topFunction()" id="myBtn" title="HACIA ARRIBA" style="background-color:  #791151;"><i class="fas fa-angle-up"></i></button>
+         
         </section>
     </main>
     <footer class="footer_global">
@@ -184,6 +165,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/cd6dae99a5.js" crossorigin="anonymous"></script>
+    <script src="../js/btn.js"></script>
 </body>
 
 </html>

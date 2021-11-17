@@ -1,121 +1,112 @@
 .main-taller {
     display: flex;
-    background-color:#F2ECD8;
-    
-        img{
-            width: 100%;
-            max-width: 200px;
-            height: 100%;
-            max-height: 220px;  
-            }
-    
-   p {
-    margin: 40px 80px;
-    text-align: center;   
+    background-color:  #f2ecd8;
+    img {
+        margin: 5px;
+        width: 50%; 
+      
     }
-    @include breakpoint(sm) {
-        img {
-            align-items: center;
-            margin: 0 10px 10px 20px;
-            padding: 10px ;
-        }
+    p {
+        line-height: 2;
+        margin: 40px 80px;
+        text-align: center;
     }
-    @include breakpoint(xs) {
-        img {
-            width: 70%;
-            margin: 0 30px 30px 30px;
-        }
-        p {
-            margin: 0 30px 20px 30px;
-        }
 }
-}
-.seminarios-taller{
-    h2{
+
+.seminarios-taller {
+    h2 {
         margin-top: 30px;
         margin-bottom: 30px;
     }
 }
 
-.clases_seminarios{
+.clases_seminarios {
     display: flex;
     flex-direction: row;
-    .clase_card{
+    @include breakpoint(sm) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include breakpoint(xs) {
+        flex-direction: column;
+    }}
+    .clase_card {
         justify-content: space-between;
         align-items: center;
         text-align: center;
         padding: 30px 20px;
-        border-radius: 15px;
         margin: 10px 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        @include breakpoint(sm){
+       border-radius: 15px;
+        @include breakpoint(sm) {
+            
             border-radius: 10px;
             font-size: 1rem;
             padding: 10px 5px;
-          }
-        @include breakpoint(xs){
+        }
+        @include breakpoint(xs) {
+            
             border-radius: 7px;
             font-size: 1rem;
             padding: 10px 5px;
-          }
-        
-    
+        }
+        h4{
+            margin: 5px 0;
+        }
         i{
             display: inline-block;
             transform: rotate(0);
             transition: ease-out 1s;
-            color:#8a3ac0;
+            color: #d8d2bf;
             font-size: 2rem;
-             &:hover{
-            transform: rotate(360deg);
-            transition: ease-out 1s;
-                }
+            &:hover {
+                transform: rotate(360deg);
+                transition: ease-out 1s;
             }
         }
         
-    p{
-        text-decoration: none;
-        }
-    .btn-light{
-        background-color:#8a3ac0;
-        border:none;
-        a{
+        p {
+            margin: 20px 0;
             text-decoration: none;
-            &:hover{
-            color: darkred;
         }
+        .btn-light {
+            background-color: #791151;
+            border: none;
+            &:hover {
+                background-color: #312738;
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                   color: white; 
+                }
+             
+            }
         }
     }
-    @include breakpoint(sm){
-        flex-direction:column;
-        align-items: center;
-       
-      }
-    @include breakpoint(xs){
-        flex-direction: column;
-      }
     
-}
-.galeria-taller{
-    display:flex;
+     
+
+.galeria-taller {
+    display: flex;
     grid-template-rows: 250px 250px 250px 250px;
-    grid-gap:10px;
+    grid-gap: 10px;
     justify-content: space-around;
-    align-items:center;
-    background-color:#D7D9D9;
+    align-items: center;
+    background-color: #d7d9d9;
     margin-top: 20px;
-     img{
-    width: 100%;
-    max-width: 250px;
-    height: 100%;
-    max-height: 250px;  
+    img {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 250px;
     }
-    img:hover{
-    transform: scale(1.5);
-    transition: ease-out 0.4s;
-    z-index: 9;
+    img:hover {
+        transform: scale(1.5);
+        transition: ease-out 0.4s;
+        z-index: 9;
     }
-    @include breakpoint(xs){
+    @include breakpoint(xs) {
         flex-direction: column;
         grid-template-columns: 250px;
     }
