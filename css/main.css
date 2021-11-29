@@ -46,7 +46,7 @@ a {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #5f9674;
+  background-color: #791151;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -86,10 +86,16 @@ button a {
       color: #334734;
       text-decoration-line: underline;
       font-weight: 900; }
+  @media (max-width: 575px) {
+    .navbar .nav-item {
+      padding-left: 20px; } }
 
 .logo_site {
-  height: 7rem;
+  height: 5rem;
   margin: 0; }
+  @media (max-width: 575px) {
+    .logo_site {
+      height: 6rem; } }
 
 /*H1,H2,H3*/
 h1 {
@@ -151,19 +157,22 @@ h4 {
     display: flex;
     justify-content: center;
     list-style-type: none; }
-    .footer_global .footer_social_icons ul li a {
-      text-decoration: none; }
-    .footer_global .footer_social_icons ul li i {
-      font-size: 30px;
-      padding: 40px 5px;
-      color: #000;
-      text-decoration: none; }
-      .footer_global .footer_social_icons ul li i.icon-facebook-square:hover {
-        color: blue; }
-      .footer_global .footer_social_icons ul li i.icon-instagram:hover {
-        color: purple; }
-      .footer_global .footer_social_icons ul li i.icon-whatsapp:hover {
-        color: green; }
+    .footer_global .footer_social_icons ul li {
+      margin: 0 10px; }
+      .footer_global .footer_social_icons ul li a {
+        text-decoration: none; }
+      .footer_global .footer_social_icons ul li i {
+        font-size: 50px;
+        padding: 30px 5px;
+        color: #791151;
+        font-weight: 500;
+        text-decoration: none; }
+        .footer_global .footer_social_icons ul li i.icon-facebook-square:hover {
+          color: blue; }
+        .footer_global .footer_social_icons ul li i.icon-instagram:hover {
+          color: purple; }
+        .footer_global .footer_social_icons ul li i.icon-whatsapp:hover {
+          color: green; }
 
 .contacto_redes {
   color: black;
@@ -179,17 +188,22 @@ p.contacto {
   font-size: 0.5rem;
   text-align: right; }
 
+.icons {
+  width: 2.5rem; }
+
 .main-site {
   margin-bottom: 30px; }
   .main-site img {
-    width: 100%; }
+    width: 100%;
+    height: 100vh; }
 
 .card {
   justify-content: space-around;
   margin: 50px 30px 40px 30px;
   text-align: center; }
   .card .card-body .btn-primary {
-    background-color: #D9AF8B;
+    width: 8rem;
+    background-color: #791151;
     border: none; }
   @media (max-width: 991px) {
     .card {
@@ -204,11 +218,13 @@ p.contacto {
     width: 70%; }
   .main-obras p {
     margin: 0 70px 40px 70px;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.8; }
   @media (max-width: 767px) {
     .main-obras img {
       align-items: center;
-      margin: 0 30px 30px 30px; }
+      margin-left: auto;
+      margin-right: auto; }
     .main-obras p {
       margin: 0 30px 20px 30px; } }
 
@@ -278,12 +294,22 @@ thead {
   display: flex;
   background-color: #f2ecd8; }
   .main-taller img {
-    margin: 5px;
-    width: 50%; }
+    margin: 10px  0; }
   .main-taller p {
     line-height: 2;
     margin: 40px 80px;
     text-align: center; }
+    @media (max-width: 575px) {
+      .main-taller p {
+        line-height: 2; } }
+  .main-taller .carousel-item img {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+    display: block; }
+  .main-taller .w-100 {
+    width: 100% !important;
+    height: 75vh; }
 
 .seminarios-taller h2 {
   margin-top: 30px;
@@ -291,6 +317,7 @@ thead {
 
 .clases_seminarios {
   display: flex;
+  justify-content: center;
   flex-direction: row; }
   @media (max-width: 991px) {
     .clases_seminarios {
@@ -324,7 +351,7 @@ thead {
     display: inline-block;
     transform: rotate(0);
     transition: ease-out 1s;
-    color: #d8d2bf;
+    color: #791151;
     font-size: 2rem; }
     .clase_card i:hover {
       transform: rotate(360deg);
@@ -333,6 +360,7 @@ thead {
     margin: 20px 0;
     text-decoration: none; }
   .clase_card .btn-light {
+    width: 8rem;
     background-color: #791151;
     border: none; }
     .clase_card .btn-light:hover {
@@ -373,7 +401,8 @@ thead {
   .main-velas p {
     margin: 0 70px 40px 70px;
     text-align: center;
-    padding: 50px 10px 30px 10px; }
+    padding: 50px 10px 30px 10px;
+    line-height: 2; }
   @media (max-width: 991px) {
     .main-velas img {
       align-items: center;

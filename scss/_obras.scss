@@ -6,11 +6,13 @@
     p {
         margin: 0 70px 40px 70px;
         text-align: center;
+        line-height: 1.8;
     }
     @include breakpoint(xs){
             img{
-                align-items: center;
-                margin: 0 30px 30px 30px;
+               align-items: center;
+               margin-left: auto;
+               margin-right: auto;
             }
         p{
             margin: 0 30px 20px 30px;

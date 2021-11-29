@@ -2,15 +2,26 @@
     display: flex;
     background-color:  #f2ecd8;
     img {
-        margin: 5px;
-        width: 50%; 
-      
+    margin: 10px  0;
     }
     p {
         line-height: 2;
         margin: 40px 80px;
         text-align: center;
+        @include breakpoint(xxs) {
+            line-height: 2;
+        }
     }
+    .carousel-item img{
+        width: auto;
+        height: 400px;
+        max-height: 400px; 
+        display: block;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 75vh;
+          }
 }
 
 .seminarios-taller {
@@ -22,6 +33,7 @@
 
 .clases_seminarios {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     @include breakpoint(sm) {
         flex-direction: column;
@@ -57,7 +69,7 @@
             display: inline-block;
             transform: rotate(0);
             transition: ease-out 1s;
-            color: #d8d2bf;
+            color:  #791151;
             font-size: 2rem;
             &:hover {
                 transform: rotate(360deg);
@@ -70,6 +82,7 @@
             text-decoration: none;
         }
         .btn-light {
+            width: 8rem;
             background-color: #791151;
             border: none;
             &:hover {

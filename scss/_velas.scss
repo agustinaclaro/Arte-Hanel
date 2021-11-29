@@ -10,6 +10,7 @@
         margin: 0 70px 40px 70px;
         text-align: center;
         padding: 50px 10px 30px 10px;
+        line-height: 2;
     }
     @include breakpoint(sm) {
         img {
