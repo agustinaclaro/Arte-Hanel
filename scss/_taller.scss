@@ -9,7 +9,9 @@
         margin: 40px 80px;
         text-align: center;
         @include breakpoint(xxs) {
-            line-height: 2;
+            margin: 20px 60px;
+            line-height: 1.5;
+            font-size: 1rem;
         }
     }
     .carousel-item img{

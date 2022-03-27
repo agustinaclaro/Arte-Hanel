@@ -91,8 +91,9 @@ button a {
       padding-left: 20px; } }
 
 .logo_site {
-  height: 5rem;
-  margin: 0; }
+  height: 5em;
+  margin: 0;
+  width: auto; }
   @media (max-width: 575px) {
     .logo_site {
       height: 6rem; } }
@@ -143,10 +144,6 @@ h4 {
     height: 1px;
     background-color: #000; }
 
-/*productos */
-.section-bg {
-  background-color: #d9d1b8; }
-
 /*footer*/
 .footer_global {
   background-color: #f2ebe9;
@@ -162,7 +159,7 @@ h4 {
       .footer_global .footer_social_icons ul li a {
         text-decoration: none; }
       .footer_global .footer_social_icons ul li i {
-        font-size: 50px;
+        font-size: 20px;
         padding: 30px 5px;
         color: #791151;
         font-weight: 500;
@@ -195,12 +192,13 @@ p.contacto {
   margin-bottom: 30px; }
   .main-site img {
     width: 100%;
-    height: 100vh; }
+    height: auto; }
 
 .card {
   justify-content: space-around;
   margin: 50px 30px 40px 30px;
-  text-align: center; }
+  text-align: center;
+  border-radius: 1rem; }
   .card .card-body .btn-primary {
     width: 8rem;
     background-color: #791151;
@@ -214,19 +212,27 @@ p.contacto {
 
 .main-obras {
   display: flex; }
-  .main-obras img {
-    width: 70%; }
-  .main-obras p {
-    margin: 0 70px 40px 70px;
+  .main-obras .obras_div_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; }
+    .main-obras .obras_div_img img {
+      width: 70%; }
+  .main-obras .obras_div_p p {
+    font-size: 15px;
     text-align: center;
     line-height: 1.8; }
+  @media (max-width: 1200px) {
+    .main-obras img {
+      padding: 0 15px; } }
   @media (max-width: 767px) {
     .main-obras img {
       align-items: center;
       margin-left: auto;
       margin-right: auto; }
     .main-obras p {
-      margin: 0 30px 20px 30px; } }
+      font-size: 10px;
+      padding: 0 10px 20px 1px; } }
 
 .galeria {
   display: grid;
@@ -237,7 +243,7 @@ p.contacto {
   align-items: center;
   background-color: #d7d9d9;
   padding: 20px 0 20px 0;
-  margin: 20px 0 20px 0; }
+  margin: 20px 0 0px 0; }
   @media (max-width: 1200px) {
     .galeria {
       grid-template-columns: 250px 250px 250px;
@@ -245,6 +251,12 @@ p.contacto {
       grid-gap: 10px; }
       .galeria div:last-child {
         display: none; } }
+  @media (max-width: 767px) {
+    .galeria {
+      grid-template-columns: 220px 220px;
+      grid-template-rows: 220px 220px; }
+      .galeria div:last-child {
+        display: block; } }
   @media (max-width: 575px) {
     .galeria {
       grid-template-columns: 250px 250px;
@@ -270,6 +282,9 @@ p.contacto {
 
 thead {
   color: darkred; }
+
+.section-bg {
+  background-color: #f2ebe9; }
 
 .carousel {
   width: 70%;
@@ -301,7 +316,9 @@ thead {
     text-align: center; }
     @media (max-width: 575px) {
       .main-taller p {
-        line-height: 2; } }
+        margin: 20px 60px;
+        line-height: 1.5;
+        font-size: 1rem; } }
   .main-taller .carousel-item img {
     width: auto;
     height: 400px;
