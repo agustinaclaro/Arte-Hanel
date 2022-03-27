@@ -1,72 +1,123 @@
 .main-taller {
     display: flex;
-    background-color:#F2ECD8;
-    img{
-    width: 40%;
+    background-color:  #f2ecd8;
+    img {
+    margin: 10px  0;
     }
-   p {
-    margin: 40px 80px;
-    text-align: center;   
+    p {
+        line-height: 2;
+        margin: 40px 80px;
+        text-align: center;
+        @include breakpoint(xxs) {
+            line-height: 2;
+        }
+    }
+    .carousel-item img{
+        width: auto;
+        height: 400px;
+        max-height: 400px; 
+        display: block;
+        }
+        .w-100 {
+            width: 100% !important;
+            height: 75vh;
+          }
+}
+
+.seminarios-taller {
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
-.clases_seminarios{
+.clases_seminarios {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    .clase_card{
+    @include breakpoint(sm) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @include breakpoint(xs) {
+        flex-direction: column;
+    }}
+    .clase_card {
         justify-content: space-between;
         align-items: center;
         text-align: center;
         padding: 30px 20px;
-        border-radius: 15px;
-        border: 0.5px solid black;
-        margin: 0 15px;
+        margin: 10px 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       border-radius: 15px;
+        @include breakpoint(sm) {
+            
+            border-radius: 10px;
+            font-size: 1rem;
+            padding: 10px 5px;
+        }
+        @include breakpoint(xs) {
+            
+            border-radius: 7px;
+            font-size: 1rem;
+            padding: 10px 5px;
+        }
+        h4{
+            margin: 5px 0;
+        }
         i{
             display: inline-block;
             transform: rotate(0);
             transition: ease-out 1s;
-            color:#D9AF8B;
+            color:  #791151;
             font-size: 2rem;
-             i:hover{
-            transform: rotate(360deg);
-            transition: ease-out 1s;
-                }
+            &:hover {
+                transform: rotate(360deg);
+                transition: ease-out 1s;
             }
+        }
         
-    p{
-        text-decoration: none;
-        }
-    .btn-light{
-        background-color:rgb(124, 89, 80);
-        border:none;
-        a{
+        p {
+            margin: 20px 0;
             text-decoration: none;
-            a:hover{
-            color: darkred;
         }
+        .btn-light {
+            width: 8rem;
+            background-color: #791151;
+            border: none;
+            &:hover {
+                background-color: #312738;
+            }
+            a {
+                text-decoration: none;
+                &:hover {
+                   color: white; 
+                }
+             
+            }
         }
     }
-}
-}
-
-.galeria-taller{
-    display:flex;
+.galeria-taller {
+    display: flex;
     grid-template-rows: 250px 250px 250px 250px;
-    grid-gap:10px;
+    grid-gap: 10px;
     justify-content: space-around;
-    align-items:center;
-    background-color:#D7D9D9;
-
-     img{
-    width: 100%;
-    max-width: 250px;
-    height: 100%;
-    max-height: 250px;  
+    align-items: center;
+    background-color: #d7d9d9;
+    margin-top: 20px;
+    img {
+        width: 100%;
+        max-width: 250px;
+        height: 100%;
+        max-height: 250px;
     }
-    img:hover{
-    transform: scale(1.5);
-    transition: ease-out 0.4s;
-    z-index: 9;
+    img:hover {
+        transform: scale(1.5);
+        transition: ease-out 0.4s;
+        z-index: 9;
+    }
+    @include breakpoint(xs) {
+        flex-direction: column;
+        grid-template-columns: 250px;
     }
 }
