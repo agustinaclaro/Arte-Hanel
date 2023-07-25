@@ -12,7 +12,8 @@ const proyecto-arte = {
   tools: [React, Node],
   architecture: ["Cart eCommerce ", "Challenge"],
  
- challenge: "I appreciate the opportunity to work on this challenge. In order to fully immerse myself in React and deliver the best results, 
+  Challenge: "I appreciate the opportunity to work on this challenge.
+  In order to fully immerse myself in Front end and deliver the best results, 
  I will be dedicating my focus to this aspect of the project."
 }
 ```
